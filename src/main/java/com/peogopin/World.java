@@ -9,7 +9,7 @@ public class World extends JPanel{
 		// World Window Settings
 		JFrame game_window = new JFrame();
 		game_window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		game_window.setResizable(false);
+		game_window.setResizable(true);
 		game_window.setTitle("Peogopin Games");
 
 		GamePanel gamePanel = new GamePanel();
