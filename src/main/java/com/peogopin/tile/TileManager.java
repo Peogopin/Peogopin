@@ -4,17 +4,25 @@ import com.peogopin.GamePanel;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class TileManager {
 	GamePanel gamePanel;
+	Graphics2D graphics2D;
 	Tile[] tile;
+	int mapTileNum[][];
 
 	public TileManager(GamePanel gamePanel){
 		this.gamePanel = gamePanel;
 
 		tile = new Tile[100];
+		mapTileNum = new int[16][16];
+
 		getTileImage();
+		loadMap("chunk-x1y1");
 	}
 
 	public void getTileImage(){
@@ -67,89 +75,63 @@ public class TileManager {
 	}
 
 	public void draw(Graphics2D graphics2D){
+		this.graphics2D = graphics2D;
 		// World design
 		/*
-		* The world is build in "chunks". The size of one chunk is "16x16 Tile Images" ->
+		* The world is build in "chunks". The size of one chunk is "16x16 Tile Images"
+		*
 		* */
+		int col = 0, row = 0, x = 0, y = 0;
 
+		while (col < 16 && row < 16) {
+			int tileNum = mapTileNum[col][row];
+			graphics2D.drawImage(tile[tileNum].image, x, y, gamePanel.tileSize, gamePanel.tileSize, null);
+			col++;
+			x += gamePanel.tileSize;
 
-		// COLUMN 0
-		int column = 0;
-		for(int i=0; i<=30; i++){
-			graphics2D.drawImage(tile[20].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
+			if(col == 16){
+				col = 0;
+				x = 0;
+				row++;
+				y += gamePanel.tileSize;
+			}
 		}
 
-		// COLUMN 1
-		column=1;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=1; i<=29; i++) {
-			graphics2D.drawImage(tile[3].image, i * gamePanel.tileSize, column* gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
+
+	}
+
+	public void loadMap(String mapName){
+		try {
+			InputStream inputStream = getClass().getResourceAsStream("/maps/overworld/"+mapName+".txt");
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+
+			int col = 0;
+			int row = 0;
+
+			while (col < 16 && row < 16){
+				String line = bufferedReader.readLine();
+				System.out.println(line);
+				while(col < 16){
+					String numbers[] = line.split(" ");
+					int num = Integer.parseInt(numbers[col]);
+					this.mapTileNum[col][row] = num;
+					col++;
+				}
+				if(col == 16){
+					col = 0;
+					row++;
+				}
+			}
+			bufferedReader.close();
+		} catch (Exception ignored){
+
 		}
-		graphics2D.drawImage(tile[20].image, 30*gamePanel.tileSize, column* gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
+	}
 
-		// COLUMN 2
-		column=2;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=1; i<=29; i++) {
-			graphics2D.drawImage(tile[3].image, i * gamePanel.tileSize, column* gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		}
-		graphics2D.drawImage(tile[20].image, 30*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		// COLUMN 3
-		column=3;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=1; i<=3; i++)
-			graphics2D.drawImage(tile[3].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		graphics2D.drawImage(tile[14].image, 4*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=5; i<=25; i++)
-			graphics2D.drawImage(tile[12].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		graphics2D.drawImage(tile[15].image, 26*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=27; i<=29; i++)
-			graphics2D.drawImage(tile[3].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		graphics2D.drawImage(tile[20].image, 30*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		// COLUMN 4
-		column=4;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=1; i<=3; i++)
-			graphics2D.drawImage(tile[3].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[10].image, 4*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=5; i<=29; i++)
-			graphics2D.drawImage(tile[5].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-
-		// COLUMN 5
-		column=5;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=1; i<=3; i++)
-			graphics2D.drawImage(tile[3].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[10].image, 4*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[5].image, 5*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[6].image, 6*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=7; i<=29; i++)
-			graphics2D.drawImage(tile[7].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-
-		// COLUMN 6
-		column=6;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		for(int i=1; i<=3; i++)
-			graphics2D.drawImage(tile[3].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[10].image, 4*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[5].image, 5*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-		graphics2D.drawImage(tile[9].image, 6*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		// COLUMN 7
-		column=7;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
-		// COLUMN 8
-		column=8;
-		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
-
+	private void placeTile(int tileNumber, int[] chunkCords, int x, int y){
+		int xCoordination = chunkCords[0]*16+x;
+		int yCoordination = chunkCords[1]*16+y;
+		this.graphics2D.drawImage(tile[tileNumber].image, xCoordination*gamePanel.tileSize, yCoordination*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
 	}
 }
 
