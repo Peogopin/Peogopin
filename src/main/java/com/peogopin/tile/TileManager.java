@@ -8,21 +8,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class TileManager {
 	GamePanel gamePanel;
 	Graphics2D graphics2D;
 	Tile[] tile;
-	int mapTileNum[][];
+	int ChunkTileNum[][];
 
 	public TileManager(GamePanel gamePanel){
 		this.gamePanel = gamePanel;
 
 		tile = new Tile[100];
-		mapTileNum = new int[16][16];
+		ChunkTileNum = new int[16][16];
 
 		getTileImage();
-		loadMap("chunk-x1y1");
 	}
 
 	public void getTileImage(){
@@ -81,26 +81,20 @@ public class TileManager {
 		* The world is build in "chunks". The size of one chunk is "16x16 Tile Images"
 		*
 		* */
-		int col = 0, row = 0, x = 0, y = 0;
-
-		while (col < 16 && row < 16) {
-			int tileNum = mapTileNum[col][row];
-			graphics2D.drawImage(tile[tileNum].image, x, y, gamePanel.tileSize, gamePanel.tileSize, null);
-			col++;
-			x += gamePanel.tileSize;
-
-			if(col == 16){
-				col = 0;
-				x = 0;
-				row++;
-				y += gamePanel.tileSize;
+		for(int chunkX=0; chunkX<=1; chunkX++) {
+			int[] chunk = defineChunk(chunkX, 0);
+			loadChunk("chunk-x" + chunk[0] + "y" + chunk[1]);
+			for (int row = 0; row <= 15; row++) {
+				for (int col = 0; col <= 15; col++) {
+					placeTile(ChunkTileNum[row][col], chunk, row, col);
+				}
 			}
 		}
-
-
 	}
-
-	public void loadMap(String mapName){
+	public int[] defineChunk(int x, int y){
+		return new int[]{x,y};
+	}
+	public void loadChunk(String mapName){
 		try {
 			InputStream inputStream = getClass().getResourceAsStream("/maps/overworld/"+mapName+".txt");
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
@@ -110,11 +104,10 @@ public class TileManager {
 
 			while (col < 16 && row < 16){
 				String line = bufferedReader.readLine();
-				System.out.println(line);
 				while(col < 16){
 					String numbers[] = line.split(" ");
 					int num = Integer.parseInt(numbers[col]);
-					this.mapTileNum[col][row] = num;
+					this.ChunkTileNum[col][row] = num;
 					col++;
 				}
 				if(col == 16){
