@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f314b82a-792e-4998-81a9-d335698276c8" name="Changes" comment="first files" />
+    <list default="true" id="f314b82a-792e-4998-81a9-d335698276c8" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/peogopin/games/maumau/test.file" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peogopin/games/maumau/test.file" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,11 +51,45 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Benjamin" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Benjamin" />
       </map>
     </option>
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/peogopin/Main.java" root0="FORCE_HIGHLIGHTING" />
@@ -89,34 +125,14 @@
       <recent name="com.peogopin.durak" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JAVA\Peogopin\src\main\resources\cards\signs" />
+      <recent name="F:\JAVA\Peogopin\src\main\resources\tiles" />
       <recent name="F:\JAVA\Durak\src\main\resources\tiles" />
       <recent name="F:\JAVA\Durak\src\main\resources\player" />
       <recent name="F:\JAVA\Durak\src\main\resources\cards\signs" />
-      <recent name="F:\JAVA\Durak\src\main\resources\cards" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Durak [:Main.main()]" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":Main.main()" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Durak" />
       <method v="2">
@@ -130,11 +146,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="21" Folder0="C:\Users\Benje\Downloads\German_DE" Folder1="C:\Users\Benje\Downloads\German_DE" Folder2="C:\Users\Benje\Downloads\German_DE" Folder3="C:\Users\Benje\Downloads\German_DE" Folder4="C:\Users\Benje\Downloads\German_DE" Folder5="C:\Users\Benje\Downloads\German_DE" Folder6="C:\Users\Benje\Downloads\German_DE" Folder7="C:\Users\Benje\Downloads\German_DE" Folder8="C:\Users\Benje\Downloads\German_DE" Folder9="C:\Users\Benje\Downloads\German_DE" Folder10="C:\Users\Benje\Downloads\German_DE" Folder11="C:\Users\Benje\Downloads\German_DE" Folder12="C:\Users\Benje\Downloads\German_DE" Folder13="C:\Users\Benje\Downloads\German_DE" Folder14="C:\Users\Benje\Downloads\German_DE" Folder15="C:\Users\Benje\Downloads\German_DE" Folder16="C:\Users\Benje\Downloads\German_DE" Folder17="C:\Users\Benje\Downloads\German_DE" Folder18="C:\Users\Benje\Downloads\German_DE" Folder19="C:\Users\Benje\Downloads\German_DE" Folder20="C:\Users\Benje\Downloads\German_DE" CustomDictionaries="21" CustomDictionary0="C:\Users\Benje\Downloads\German_DE\abkuerzungen.dic" CustomDictionary1="C:\Users\Benje\Downloads\German_DE\astronomie.dic" CustomDictionary2="C:\Users\Benje\Downloads\German_DE\biologie.dic" CustomDictionary3="C:\Users\Benje\Downloads\German_DE\chemie.dic" CustomDictionary4="C:\Users\Benje\Downloads\German_DE\computer.dic" CustomDictionary5="C:\Users\Benje\Downloads\German_DE\de_alt.dic" CustomDictionary6="C:\Users\Benje\Downloads\German_DE\de_neu.dic" CustomDictionary7="C:\Users\Benje\Downloads\German_DE\elektronic.dic" CustomDictionary8="C:\Users\Benje\Downloads\German_DE\geographie.dic" CustomDictionary9="C:\Users\Benje\Downloads\German_DE\geologie.dic" CustomDictionary10="C:\Users\Benje\Downloads\German_DE\informatik.dic" CustomDictionary11="C:\Users\Benje\Downloads\German_DE\mathematik.dic" CustomDictionary12="C:\Users\Benje\Downloads\German_DE\medizin.dic" CustomDictionary13="C:\Users\Benje\Downloads\German_DE\namen.dic" CustomDictionary14="C:\Users\Benje\Downloads\German_DE\organisationen.dic" CustomDictionary15="C:\Users\Benje\Downloads\German_DE\physik.dic" CustomDictionary16="C:\Users\Benje\Downloads\German_DE\recht.dic" CustomDictionary17="C:\Users\Benje\Downloads\German_DE\remove.dic" CustomDictionary18="C:\Users\Benje\Downloads\German_DE\tex_de.dic" CustomDictionary19="C:\Users\Benje\Downloads\German_DE\vornamen.dic" CustomDictionary20="C:\Users\Benje\Downloads\German_DE\wirtschaft.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -162,7 +173,42 @@
       <option name="project" value="LOCAL" />
       <updated>1671461162681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first files">
+      <created>1671461370492</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671461370492</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <created>1671461475964</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671461475964</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <created>1671464251042</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671464251042</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <created>1671464620064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671464620064</updated>
+    </task>
+    <task id="LOCAL-00007" summary=".">
+      <created>1671464708191</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671464708191</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,7 +227,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="first files" />
-    <option name="LAST_COMMIT_MESSAGE" value="first files" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
