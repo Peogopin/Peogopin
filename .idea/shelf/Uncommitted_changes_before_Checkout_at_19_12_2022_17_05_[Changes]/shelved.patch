@@ -1,0 +1,97 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 0ed229e36c842804875c58d9de8131673e745807)
++++ b/.idea/misc.xml	(date 1671465763721)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f314b82a-792e-4998-81a9-d335698276c8\" name=\"Changes\" comment=\".\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/peogopin/games/maumau/test.file\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/peogopin/games/maumau/test.file\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"Peogopin\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"Peogopin\" type=\"f1a62948:ProjectNode\" />\r\n                <item name=\"Run Configurations\" type=\"7b0102dc:RunConfigurationsNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <excluded-from-favorite>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"LOCAL\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"master\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n          <entry type=\"REMOTE\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"origin/master\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </excluded-from-favorite>\r\n    <favorite-branches>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"LOCAL\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"Benjamin\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </favorite-branches>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Benjamin\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/java/com/peogopin/Main.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2J5CAwOqV0JJQ9fYzYlhpMChG3z\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/JAVA/Peogopin&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.peogopin.durak\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"F:\\JAVA\\Peogopin\\src\\main\\resources\\cards\\signs\" />\r\n      <recent name=\"F:\\JAVA\\Peogopin\\src\\main\\resources\\tiles\" />\r\n      <recent name=\"F:\\JAVA\\Durak\\src\\main\\resources\\tiles\" />\r\n      <recent name=\"F:\\JAVA\\Durak\\src\\main\\resources\\player\" />\r\n      <recent name=\"F:\\JAVA\\Durak\\src\\main\\resources\\cards\\signs\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Durak\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Durak\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"21\" Folder0=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder1=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder2=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder3=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder4=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder5=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder6=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder7=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder8=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder9=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder10=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder11=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder12=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder13=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder14=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder15=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder16=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder17=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder18=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder19=\"C:\\Users\\Benje\\Downloads\\German_DE\" Folder20=\"C:\\Users\\Benje\\Downloads\\German_DE\" CustomDictionaries=\"21\" CustomDictionary0=\"C:\\Users\\Benje\\Downloads\\German_DE\\abkuerzungen.dic\" CustomDictionary1=\"C:\\Users\\Benje\\Downloads\\German_DE\\astronomie.dic\" CustomDictionary2=\"C:\\Users\\Benje\\Downloads\\German_DE\\biologie.dic\" CustomDictionary3=\"C:\\Users\\Benje\\Downloads\\German_DE\\chemie.dic\" CustomDictionary4=\"C:\\Users\\Benje\\Downloads\\German_DE\\computer.dic\" CustomDictionary5=\"C:\\Users\\Benje\\Downloads\\German_DE\\de_alt.dic\" CustomDictionary6=\"C:\\Users\\Benje\\Downloads\\German_DE\\de_neu.dic\" CustomDictionary7=\"C:\\Users\\Benje\\Downloads\\German_DE\\elektronic.dic\" CustomDictionary8=\"C:\\Users\\Benje\\Downloads\\German_DE\\geographie.dic\" CustomDictionary9=\"C:\\Users\\Benje\\Downloads\\German_DE\\geologie.dic\" CustomDictionary10=\"C:\\Users\\Benje\\Downloads\\German_DE\\informatik.dic\" CustomDictionary11=\"C:\\Users\\Benje\\Downloads\\German_DE\\mathematik.dic\" CustomDictionary12=\"C:\\Users\\Benje\\Downloads\\German_DE\\medizin.dic\" CustomDictionary13=\"C:\\Users\\Benje\\Downloads\\German_DE\\namen.dic\" CustomDictionary14=\"C:\\Users\\Benje\\Downloads\\German_DE\\organisationen.dic\" CustomDictionary15=\"C:\\Users\\Benje\\Downloads\\German_DE\\physik.dic\" CustomDictionary16=\"C:\\Users\\Benje\\Downloads\\German_DE\\recht.dic\" CustomDictionary17=\"C:\\Users\\Benje\\Downloads\\German_DE\\remove.dic\" CustomDictionary18=\"C:\\Users\\Benje\\Downloads\\German_DE\\tex_de.dic\" CustomDictionary19=\"C:\\Users\\Benje\\Downloads\\German_DE\\vornamen.dic\" CustomDictionary20=\"C:\\Users\\Benje\\Downloads\\German_DE\\wirtschaft.dic\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration>C:\\Users\\Benje\\AppData\\Roaming\\Subversion</configuration>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f314b82a-792e-4998-81a9-d335698276c8\" name=\"Changes\" comment=\"\" />\r\n      <created>1671358417809</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1671358417809</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first files\">\r\n      <created>1671442453131</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671442453131</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"first files\">\r\n      <created>1671461162681</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671461162681</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"first files\">\r\n      <created>1671461370492</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671461370492</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\".\">\r\n      <created>1671461475964</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671461475964</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\".\">\r\n      <created>1671464251042</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671464251042</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\".\">\r\n      <created>1671464620064</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671464620064</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\".\">\r\n      <created>1671464708191</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671464708191</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"first files\" />\r\n    <MESSAGE value=\".\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\".\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0ed229e36c842804875c58d9de8131673e745807)
++++ b/.idea/workspace.xml	(date 1671465862151)
+@@ -5,7 +5,14 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f314b82a-792e-4998-81a9-d335698276c8" name="Changes" comment=".">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peogopin/games/maumau/test.file" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peogopin/games/maumau/test.file" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -89,7 +96,21 @@
+         <entry key="$PROJECT_DIR$" value="Benjamin" />
+       </map>
+     </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="UPDATE_TYPE" value="REBASE" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="4d8bd81f-c7d6-4e74-a702-f36eee406e1e" />
++        <option name="url" value="https://github.com/Peogopin/Peogopin.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="HighlightingSettingsPerFile">
+     <setting file="file://$PROJECT_DIR$/src/main/java/com/peogopin/Main.java" root0="FORCE_HIGHLIGHTING" />
+@@ -112,7 +133,7 @@
+     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+   },
+   &quot;keyToStringList&quot;: {
+     &quot;ChangesTree.GroupingKeys&quot;: [
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"#JAVA_HOME\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 0ed229e36c842804875c58d9de8131673e745807)
++++ b/.idea/gradle.xml	(date 1671465279061)
+@@ -4,9 +4,10 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
++        <option name="delegatedBuild" value="true" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleJvm" value="#JAVA_HOME" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
