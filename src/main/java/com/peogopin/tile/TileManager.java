@@ -111,7 +111,7 @@ public class TileManager {
 		column=4;
 		graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
 		for(int i=1; i<=3; i++){
-			graphics2D.drawImage(tile[20].image, 0*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
+			graphics2D.drawImage(tile[3].image, i*gamePanel.tileSize, column*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
 		}
 
 		// COLUMN 5
