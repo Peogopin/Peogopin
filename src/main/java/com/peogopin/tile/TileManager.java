@@ -9,12 +9,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.concurrent.ExecutionException;
 
 public class TileManager {
 	GamePanel gamePanel;
 	Graphics2D graphics2D;
 	Tile[] tile;
-	int ChunkTileNum[][];
+	int[][] ChunkTileNum;
+
+
+	// define the position of corners of the screen
+
 
 	public TileManager(GamePanel gamePanel){
 		this.gamePanel = gamePanel;
@@ -78,25 +83,41 @@ public class TileManager {
 		this.graphics2D = graphics2D;
 		// World design
 		/*
-		* The world is build in "chunks". The size of one chunk is "16x16 Tile Images"
+		* The world is build in "Chunks". The size of one chunk is "16x16 Tile Images"
 		*
 		* */
-		for(int chunkX=0; chunkX<=1; chunkX++) {
-			int[] chunk = defineChunk(chunkX, 0);
-			loadChunk("chunk-x" + chunk[0] + "y" + chunk[1]);
-			for (int row = 0; row <= 15; row++) {
-				for (int col = 0; col <= 15; col++) {
-					placeTile(ChunkTileNum[row][col], chunk, row, col);
-				}
+		for(int chunkX=0; chunkX<=2; chunkX++) {
+			for(int chunkY=0; chunkY<=1; chunkY++) {
+					int[] chunk = defineChunk(chunkX, chunkY);
+					loadChunk("chunk-x" + chunk[0] + "y" + chunk[1]);
+					for (int row = 0; row <= 15; row++) {
+						for (int col = 0; col <= 15; col++) {
+							if (checkIfTileIsInsideScreen(chunk, row, col))
+								placeTile(ChunkTileNum[row][col], chunk, row, col);
+						}
+					}
 			}
 		}
 	}
+
+	public boolean checkIfTileIsInsideScreen(int[] chunk, int row, int col){
+		int[] tileWorldPosition = {(chunk[0]*16+row), (chunk[1]*16+col)};
+		int[] playerWorldPosition = {gamePanel.player.worldX+(12), gamePanel.player.worldY+(8)};
+		return tileWorldPosition[0] >= (playerWorldPosition[0] - 12) &&
+						tileWorldPosition[1] >= (playerWorldPosition[1] - 8) &&
+						tileWorldPosition[0] <= (playerWorldPosition[0] + 12) &&
+						tileWorldPosition[1] <= (playerWorldPosition[1] + 8);
+	}
+
 	public int[] defineChunk(int x, int y){
 		return new int[]{x,y};
 	}
 	public void loadChunk(String mapName){
 		try {
 			InputStream inputStream = getClass().getResourceAsStream("/maps/overworld/"+mapName+".txt");
+			if(inputStream == null){
+				inputStream = getClass().getResourceAsStream("/maps/overworld/empty.txt");
+			}
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 			int col = 0;
@@ -122,9 +143,8 @@ public class TileManager {
 	}
 
 	private void placeTile(int tileNumber, int[] chunkCords, int x, int y){
-		int xCoordination = chunkCords[0]*16+x;
-		int yCoordination = chunkCords[1]*16+y;
+		int xCoordination = chunkCords[0]*16+x - gamePanel.player.worldX;
+		int yCoordination = chunkCords[1]*16+y - gamePanel.player.worldY;
 		this.graphics2D.drawImage(tile[tileNumber].image, xCoordination*gamePanel.tileSize, yCoordination*gamePanel.tileSize, gamePanel.tileSize, gamePanel.tileSize, null);
 	}
 }
-
