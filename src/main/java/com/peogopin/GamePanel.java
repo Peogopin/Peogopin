@@ -9,17 +9,20 @@ import java.awt.*;
 public class GamePanel extends JPanel implements Runnable{
 
 	// Screen Settings
+	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	final int originalTileSize = 16; // 16x16 [px] tile
 	final int scale = 3;
 	public final int tileSize = originalTileSize * scale; // 48x48 [px] tile
-	final int screenWidth = 1000; // in px
-	final int screenHeight = 667; // in px
-	final int fps = 144;
+	public final int screenWidth = tileSize * 24; // in TileSizes
+	public final int screenHeight = tileSize * 16; // in TileSizes
+
+	//FPS
+	final int fps = 60;
 
 	TileManager tileManager = new TileManager(this);
 	KeyHandler keyHandler = new KeyHandler();
 	Thread gameThread;
-	Player player = new Player(this, keyHandler);
+	public Player player = new Player(this, keyHandler);
 
 	GamePanel(){
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight));
@@ -27,6 +30,13 @@ public class GamePanel extends JPanel implements Runnable{
 		this.setDoubleBuffered(true);
 		this.addKeyListener(keyHandler);
 		this.setFocusable(true);
+	}
+
+	public int getScreenHeight(){
+		return (int) screenSize.getHeight();
+	}
+	public int getScreenWidth(){
+		return (int) screenSize.getWidth();
 	}
 
 	public void startGameThread(){
